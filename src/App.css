@@ -1,38 +1,369 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  /* background-color: rgb(30, 30, 30); */
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desktop-menu {
   display: flex;
-  flex-direction: column;
+  margin: 1rem;
+  cursor: pointer;
+  justify-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.items {
+  color: white;
+  justify-content: space-between;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.items:hover {
+  color: rgb(58, 161, 245);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(58, 161, 245);
+
+
+  box-shadow: 0px 0px 100px rgb(58, 161, 245);
+}
+
+.Navbar {
+  height: 5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin-left: 3rem;
+}
+.button {
+  height: 50px;
+  width: 100px;
+  margin: 1rem;
+  cursor: pointer;
+  /* border: none; */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: white;
+  margin-left: 40rem;
+  border-radius: 4rem;
+}
+.button:hover {
+  background-color: rgb(58, 161, 245);
+  height: 60px;
+  width: 110px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* intro section.......................... */
+#intro {
+  height: 50%;
+  width: 100vw;
+  /* max-width: 75rem; */
+  /* margin: 0%; */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  /* margin-bottom: 0.1rem; */
+}
+.introContent {
+  margin-top: 7rem;
+  height: 100vh;
+  width: 100vh;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+}
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.introName {
+  color: rgb(58, 161, 245);
+  /* transition: all ease 0.3s; */
+  /* filter: drop-shadow(5px 5px 5px rgb(50, 161, 245)); */
+  /* margin-right: 20rem; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.introName2{
+  margin-right: 15rem;
+  color:rgb(58, 161, 245) ;
+  transition: all ease 0.3s;
+  filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));            
+}
+
+
+.introParagh {
+  font-size: small;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+.krishna{
+  height: 500px;
+  width: 400px;
+  margin-right: 3rem;
+  border-radius: 50px;
+  position: absolute;
+  /* top:-4rem; */
+  z-index: -1;
+  right: 0;
+  object-fit: cover;
+  transition: all ease 0.3s;
+  filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));
+}
+
+
+
+
+
+/* //skill section */
+.skillTitle {
+  font-weight: bold;
+  margin-left: 15rem;
+  color: rgb(58, 161, 245);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+
+.skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  margin-left: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.skillDecription {
+  font-weight: 200;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+.skillBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+}
+
+.skillText {
+  font-size: 0.9rem;
+}
+
+
+
+
+
+.skillImages {
+  display: flex;
+}
+
+.skillImg {
+  height: 60px;
+  width: 72px;
+  margin: auto;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  transition: all ease 0.3s;
+}
+.skillImg:hover {
+  box-shadow: skyblue;
+  height: 70px;
+  width: 78px;
+  transition: 1s;
+  box-shadow: 0px 0px 100px rgb(58, 161, 245);
+  /* position: relative; */
+}
+
+/*prohects section work css section ........................................................ */
+
+.workdetails {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  margin-left: 5.5rem;
+}
+.workBar {
+  /* display: flex; */
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+  transition: all ease 0.3s;
+}
+
+.workBar:hover{
+width:100% ;
+height: 100%;
+  transition: 1s;
+  box-shadow: 0px 0px 100px rgb(58, 161, 245);
+}
+
+.workTitle {
+  font-weight: bold;
+  margin-left: 25rem;
+  color: rgb(58, 161, 245);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+
+.workDescription {
+  font-weight: 200;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+  margin-left: 10rem;
+}
+
+/* clients section................ */
+
+.clients {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.clientsDetails {
+  display: flex;
+}
+
+.ClientsTitle {
+  font-weight: bold;
+  margin-left: 25rem;
+  color: rgb(58, 161, 245);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+
+.clientsBar {
+  /* display: flex; */
+  height: 70%;
+  width: 30%;
+  margin-left: 7rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+  transition: all 0.3s;
+}
+
+.clientsBar:hover{
+  cursor: pointer;
+  transition: 1s;
+  box-shadow: 0px 0px 100px rgb(58, 161, 245);
+ 
+}
+
+/* contact section........................ */
+.contactTitle {
+  margin-left: 25rem;
+  color: skyblue;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.ContactDetails {
+  display: flex;
+  margin-left: 10rem;
+}
+.ContactDetails2{
+  color: skyblue;
+  margin-left: 10rem;
+
+}
+.git-img{
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-left: 10rem;
+  margin-top: 0.5rem;
+}
+
+
+
+/* User image on top :right.......................... */
+.userImg{
+  margin-top: 2rem;
+  /* margin-right: 22rem; */
+  height: 100px;
+  width: 100px;
+  transition: all ease 0.3s;
+  /* filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));/ */
+}
+.userImg:hover{
+  cursor: pointer;
+  transition: 1s;
+  transition: all ease 0.3s;
+  filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));
+  /* box-shadow: 0px 0px 100px rgb(58, 161, 245); */
+  border-radius:10px ;
+}
+
+/* softskills section....................................  */
+
+
+.soft-img{
+  height: 120px;
+  width: 180px;
+  /* margin: auto; */
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  transition: all ease 0.3s;
+}
+.soft-img:hover{
+  cursor: pointer;
+  transition: 1s;
+  box-shadow: 0px 0px 100px rgb(58, 161, 245);
+  border-radius:10px ;
+
+}
+.soft-head{
+margin-left: 1.5rem;
+}
+.soft-items{
+  display: flex;
+  justify-content: space-evenly;
+}
+.soft-Title{
+  font-weight: bold;
+  margin-left: 25rem;
+  color: rgb(58, 161, 245);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
 }
