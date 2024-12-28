@@ -7,11 +7,12 @@
 }
 
 body {
-  background-color: black;
+  background-color: antiquewhite;
   /* background-color: rgb(30, 30, 30); */
-  color: white;
+  color: black;
   overflow: hidden;
   overflow-y: scroll;
+
 }
 
 .desktop-menu {
@@ -149,7 +150,7 @@ body {
 /* //skill section */
 .skillTitle {
   font-weight: bold;
-  margin-left: 15rem;
+  margin-left: 20rem;
   color: rgb(58, 161, 245);
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -210,45 +211,7 @@ body {
 
 /*prohects section work css section ........................................................ */
 
-.workdetails {
-  margin: 1.5rem;
-  width: 100vw;
-  max-width: 80%;
-  margin-left: 5.5rem;
-}
-.workBar {
-  /* display: flex; */
-  margin: 1rem;
-  padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
-  background: rgb(50, 50, 50);
-  transition: all ease 0.3s;
-}
 
-.workBar:hover{
-width:100% ;
-height: 100%;
-  transition: 1s;
-  box-shadow: 0px 0px 100px rgb(58, 161, 245);
-}
-
-.workTitle {
-  font-weight: bold;
-  margin-left: 25rem;
-  color: rgb(58, 161, 245);
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-}
-
-
-.workDescription {
-  font-weight: 200;
-  font-size: 1rem;
-  max-width: 50rem;
-  padding: 0 2rem;
-  margin-left: 10rem;
-}
 
 /* clients section................ */
 
@@ -262,7 +225,7 @@ height: 100%;
 
 .ClientsTitle {
   font-weight: bold;
-  margin-left: 25rem;
+  margin-left: 30rem;
   color: rgb(58, 161, 245);
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -277,7 +240,7 @@ height: 100%;
   margin-left: 7rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background: rgb(50, 50, 50);
+  /* background: rgb(50, 50, 50); */
   transition: all 0.3s;
 }
 
@@ -288,23 +251,7 @@ height: 100%;
  
 }
 
-/* contact section........................ */
-.contactTitle {
-  margin-left: 25rem;
-  color: skyblue;
-  font-weight: bold;
-  font-size: 3rem;
-}
 
-.ContactDetails {
-  display: flex;
-  margin-left: 10rem;
-}
-.ContactDetails2{
-  color: skyblue;
-  margin-left: 10rem;
-
-}
 .git-img{
   height: 30px;
   width: 30px;
@@ -361,9 +308,10 @@ margin-left: 1.5rem;
 }
 .soft-Title{
   font-weight: bold;
-  margin-left: 25rem;
+  margin-left: 20rem;
   color: rgb(58, 161, 245);
   font-size: 3rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
+

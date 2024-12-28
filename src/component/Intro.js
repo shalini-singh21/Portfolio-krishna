@@ -1,13 +1,13 @@
 import React from "react";
 
-//  import  krishna from "../images/krishna.png"
+ import  krishna from "../images/krishna.png"
 const Intro = () => {
 
     return (
 
         <>
             
-                {/* <img src={shalu} alt="shalu" className="shalu"/> */}
+               
                 <section id="intro">
                     <div className="introContent">
                         <span className="hello"> Hello,</span> <br></br>
@@ -17,7 +17,7 @@ const Intro = () => {
                         <a><button className="btn"><img src="" alt="" />Hire me</button></a>
                     </div>
                      
-                    {/* <img src={krishna}  className="krishna" />   */}
+                    <img src={krishna}  className="krishna" /> 
                 </section>
 
               

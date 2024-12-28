@@ -14,6 +14,7 @@ import skill12 from "../images/skill12.png"
 import skill13 from "../images/skill13.png"
 import skill14 from "../images/skill14.png"
 import skill15 from "../images/skill15.png"
+import Softskills from "./Softskills"
 // import skill16 from "../images/skill 8.png"
 
 const Skills = () => {
@@ -43,6 +44,8 @@ const Skills = () => {
                     {/* <img src={skill16} className=" skillImg"/> */}
 
                 </div>
+
+                <Softskills/>
 
             </section>
         </>
