@@ -1,12 +1,12 @@
 import React from "react";
 
-const clients = ( {_props}) => {
+const clients = ( ) => {
 
     return (
 
         <>
             <section className="clients">
-                <h1 className="ClientsTitle">hello,{_props} </h1>
+                <h1 className="ClientsTitle"> </h1>
                 <div className="clientsDetails">
 
                     <div className="clientsBar">

@@ -10,10 +10,10 @@ const Navbar = () => {
         <>
             <div className="Navbar">
 
-                <h1 className="introName2">Krishna Sharma</h1>
+                <h1 className="introName2">Portfolio</h1>
 
                 < div className="desktop-menu">
-                    < a activeClass="active" href="/intro" spy={true} smooth={true} offset={-100} duration={500} className="items">Home </a>
+                    <a activeClass="active" href="/intro" spy={true} smooth={true} offset={-100} duration={500} className="items">Home </a>
                     <a activeClass="active" href="/skills" spy={true} smooth={true} offset={-50} duration={500} className="items">Skills</a>
                     <a activeClass="active" href="/project" spy={true} smooth={true} offset={-50} duration={500} className="items">Projects</a>
                     <a activeClass="active" href="/clients" spy={true} smooth={true} offset={-50} duration={500} className="items">Clients</a>

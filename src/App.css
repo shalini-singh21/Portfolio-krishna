@@ -17,28 +17,41 @@ body {
 
 .desktop-menu {
   display: flex;
-  margin: 1rem;
-  cursor: pointer;
-  justify-items: center;
-  justify-content: space-between;
-  margin-left: 2rem;
-  align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+    justify-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    align-items: center;
+    list-style: none;
+    gap: 47px;
+}
+menu{
+  position: absolute;
+  right: 0;
+  margin:10% ;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 11px;
+  z-index: 3;
 }
 
-.items {
-  color: white;
+.desktop-menu a{
+  font-size: 25px;
+
+  text-decoration: none;
+}
+
+
+.items   {
+  font-size: 25px;
+  text-decoration: none;
   justify-content: space-between;
-  margin-left: 2rem;
   font-weight: bold;
-}
-.items:hover {
-  color: rgb(58, 161, 245);
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid rgb(58, 161, 245);
+  display: flex;
 
-
-  box-shadow: 0px 0px 100px rgb(58, 161, 245);
 }
+
 
 .Navbar {
   height: 5rem;
@@ -46,7 +59,6 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
-  /* background-color: red; */
   align-items: center;
   justify-content: space-between;
   position: sticky;
@@ -59,7 +71,6 @@ body {
   width: 100px;
   margin: 1rem;
   cursor: pointer;
-  /* border: none; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,9 +149,27 @@ body {
   /* top:-4rem; */
   z-index: -1;
   right: 0;
-  object-fit: cover;
+  /* object-fit: cover; */
   transition: all ease 0.3s;
   filter: drop-shadow(5px 5px 5px rgb(50, 161, 245));
+
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+  animation-timing-function:ease-in-out ;
+  
+
+}
+@keyframes floating {
+  0%{
+    transform: translate(0,0px);
+  }
+  50%{
+    transform: translate(0,50px);
+  }
+  100%{
+    transform: translate(0,-10px);
+  }
 }
 
 
@@ -314,4 +343,35 @@ margin-left: 1.5rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
+@media screen  and (max-width:700px){
+  .Navbar{
+    flex-direction: column;
+    align-items:flex-start ;
+  }
+  menu{
+    position: absolute;
+    right: 0;
+    margin:10% ;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
 
+  .desktop-menu {
+    display: flex;
+    margin: 1rem;
+    cursor: pointer;
+    justify-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    align-items: center;
+    list-style: none;
+    gap: 47px;
+  
+  }
+  .desktop-menu a{
+    font-size: 25px;
+    text-decoration: none;
+  }
+  }

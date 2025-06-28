@@ -23,20 +23,10 @@ function App() {
           <Route exact path='/intro' element={<Intro />}/>
           <Route exact path='/skills' element={<Skills />}/>
           <Route exact path='Project' element={<Project />}/>
-          <Route exact path='/clients' element={<Clients _props="krishna"/>}/>
+          <Route exact path='/clients' element={<Clients/>}/>
         </Routes>
-
       </Router>
-      {/* <Navbar />
-      <Intro />
-
-
-      <Skills />
-      <Softskills/>
-      <Clients />
-      {/* <Project /> */}
-      {/* <Contact /> */}
-
+    
     </>
   );
 }
